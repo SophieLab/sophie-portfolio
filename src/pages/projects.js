@@ -89,7 +89,7 @@ const Project = ({title, type, summary, img, link, technologies}) => (
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
         </Link>
-        <div className="mt-4 flex w-full dark:text-light text-white flex-col items-start justify-between">
+        <div className="mt-4 flex w-full text-dark dark:text-light flex-col items-start justify-between">
             <span
                 className="text-xl font-medium text-primary dark:text-primaryDark lg:text-lg md:text-base">{type}</span>
             <Link href={link} target="_blank" className="underline-offset-2 hover:underline">
