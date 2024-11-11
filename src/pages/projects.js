@@ -33,12 +33,13 @@ import proj8 from "../../public/images/projects/projet8.png";
 const FramerImage = motion(Image);
 
 // Featured Project Component
+// FeaturedProject Component
 const FeaturedProject = ({type, title, summary, img, link, technologies}) => (
     <article
-        className="relative flex w-full items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light p-12 shadow-2xl dark:border-light dark:bg-dark lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
+        className="relative flex w-full flex-wrap items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light p-8 shadow-2xl dark:border-light dark:bg-dark lg:flex-col lg:p-6 xs:rounded-2xl xs:rounded-br-3xl xs:p-4">
         <div
             className="absolute top-0 -right-3 -z-10 h-[103%] w-[101%] rounded-[2.5rem] rounded-br-3xl bg-dark dark:bg-light xs:-right-2 xs:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]"/>
-        <Link href={link} target="_blank" className="w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full">
+        <Link href={link} target="_blank" className="w-full lg:w-3/4 cursor-pointer overflow-hidden rounded-lg">
             <FramerImage
                 src={img}
                 alt={title}
@@ -49,27 +50,28 @@ const FeaturedProject = ({type, title, summary, img, link, technologies}) => (
                 priority
             />
         </Link>
-        <div className="flex w-1/2 flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <div className="flex flex-col w-full lg:w-3/4 text-dark dark:text-light items-start justify-between pl-4 lg:pl-0 lg:pt-4">
             <span className="text-xl font-medium text-primary dark:text-primaryDark xs:text-base">{type}</span>
             <Link href={link} target="_blank" className="underline-offset-2 hover:underline">
-                <h2 className="my-2 w-full text-left text-4xl font-bold lg:text-3xl xs:text-2xl">{title}</h2>
+                <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl xs:text-xl">{title}</h2>
             </Link>
             <p className="my-2 rounded-md font-medium text-dark dark:text-light sm:text-sm">{summary}</p>
-            <div className="mt-2 flex items-center">
-
+            <div className="mt-2 flex flex-wrap items-center">
                 <Link href={link} target="_blank"
                       className="ml-4 rounded-lg bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark sm:px-4 sm:text-base"
                       aria-label="Découvrir le projet">
-Découvrir le projet                </Link>
-                <div className="ml-4 flex space-x-4">
+                    Découvrir le projet
+                </Link>
+                <div className="ml-4 flex flex-wrap space-x-2 space-y-2 sm:space-x-1">
                     {technologies.map((tech, index) => (
-                        <Image key={index} src={tech} alt="Technology Icon" width={30} height={30}/>
+                        <Image key={index} src={tech} alt="Technology Icon" width={25} height={25}/>
                     ))}
                 </div>
             </div>
         </div>
     </article>
 );
+
 
 // Project Component
 const Project = ({title, type, summary, img, link, technologies}) => (
@@ -87,11 +89,11 @@ const Project = ({title, type, summary, img, link, technologies}) => (
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
         </Link>
-        <div className="mt-4 flex w-full flex-col items-start justify-between">
+        <div className="mt-4 flex w-full dark:text-light text-white flex-col items-start justify-between">
             <span
                 className="text-xl font-medium text-primary dark:text-primaryDark lg:text-lg md:text-base">{type}</span>
             <Link href={link} target="_blank" className="underline-offset-2 hover:underline">
-                <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl">{title}</h2>
+                <h2 className="my-2 w-full  text-left text-3xl font-bold lg:text-2xl">{title}</h2>
             </Link>
             {summary && <p className="my-2 rounded-md font-medium text-dark dark:text-light sm:text-sm">{summary}</p>}
             <div className="flex w-full items-center justify-between">
@@ -129,10 +131,12 @@ const Projects = () => {
                 <meta name="description" content="Discover the latest webapp projects created by SophieLab"/>
             </Head>
             <TransitionEffect/>
-            <main className="mb-16 flex w-full flex-col items-center justify-center dark:text-dark">
-                <Layout className="pt-24">
-                    <AnimatedText text="Mes projets"
-                                  className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"/>
+            <main className="mb-16 w-full flex flex-col items-center justify-center dark:text-dark pb-24 sm:pb-32">
+            <Layout className="pt-32 sm:pt-40 xs:pt-56">
+                <AnimatedText 
+            text="Mes projets" 
+            className="mb-16 !text-8xl !leading-tight lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!text-4xl"
+        />
                     <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
                         <div className="col-span-12">
                             <FeaturedProject

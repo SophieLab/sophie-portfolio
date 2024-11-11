@@ -34,7 +34,7 @@ export default function Articles() {
                         <Link
                             href="tel:+33670398936"
                             className={`flex items-center gap-2 rounded-lg border-2 border-solid bg-dark px-4 py-2 sm:px-6 sm:py-3 text-base sm:text-lg font-semibold capitalize text-light 
-                                hover:border-dark hover:bg-transparent hover:text-dark dark:bg-light dark:text-dark 
+                                hover:border-dark hover:bg-transparent hover:text-white dark:bg-light dark:text-dark 
                                 dark:hover:border-light dark:hover:bg-dark dark:hover:text-light`}
                         >
                             <FaPhoneAlt className="text-lg sm:text-xl" />
@@ -43,7 +43,7 @@ export default function Articles() {
                         <Link
                             href="mailto:labytophie@gmail.com"
                             className={`flex items-center gap-2 rounded-lg border-2 border-solid bg-dark px-4 py-2 sm:px-6 sm:py-3 text-base sm:text-lg font-semibold capitalize text-light 
-                                hover:border-dark hover:bg-transparent hover:text-dark dark:bg-light dark:text-dark 
+                                hover:border-dark hover:bg-transparent hover:text-white dark:bg-light dark:text-dark 
                                 dark:hover:border-light dark:hover:bg-dark dark:hover:text-light`}
                         >
                             <FaEnvelope className="text-lg sm:text-xl" />
