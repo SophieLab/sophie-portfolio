@@ -58,8 +58,8 @@ const Certifications = () => {
                 <ul className="w-full flex flex-col items-start justify-between ml-4">
                     <Details
                         type="Certification Opquast Maîtrise de la qualité en projet web"
-                        time="2024"
-                        place="OpenClassrooms"
+                        time="2021"
+                        place="Opquast"
                     />
                     <Details
                         type="Attestation de suivi MOOC l'Atelier RGPD"

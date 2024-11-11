@@ -17,8 +17,7 @@ const CustomLink = ({ href, title, className = "" }) => {
                     inline-block h-[1px] bg-dark absolute left-0 -bottom-0.5
                     group-hover:w-full transition-[width] ease duration-300 dark:bg-light
                     ${router.asPath === href ? "w-full" : "w-0"} lg:bg-light lg:dark:bg-dark
-                `}
-            >
+                `}>
                 &nbsp;
             </span>
         </Link>
@@ -41,8 +40,7 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
                     inline-block h-[1px] bg-dark absolute left-0 -bottom-0.5
                     group-hover:w-full transition-[width] ease duration-300 dark:bg-light
                     ${router.asPath === href ? "w-full" : "w-0"} lg:bg-light lg:dark:bg-dark
-                `}
-            >
+                `}>
                 &nbsp;
             </span>
         </button>
@@ -77,14 +75,14 @@ const Navbar = () => {
                     <CustomLink className="mr-4" href="/" title="Home" />
                     <CustomLink className="mx-4" href="/about" title="À Propos" />
                     <CustomLink className="mx-4" href="/projects" title="Portfolio" />
-                    <CustomLink className="ml-4" href="/articles" title="Articles" />
+                    <CustomLink className="ml-4" href="/articles" title="Travaillons Ensemble" />
                 </nav>
 
                 <nav className="flex items-center justify-center flex-wrap lg:mt-2">
                     <motion.a
                         target={"_blank"}
                         className="w-6 mx-3"
-                        href="#"
+                        href="https://github.com/SophieLab"  // Your GitHub URL
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         aria-label="Checkout my github profile"
@@ -94,7 +92,7 @@ const Navbar = () => {
                     <motion.a
                         target={"_blank"}
                         className="w-6 mx-3"
-                        href="#"
+                        href="https://www.linkedin.com/in/sophielabyt/"  // Ajoutez le lien LinkedIn
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         aria-label="Checkout my linkedin profile"
@@ -125,31 +123,32 @@ const Navbar = () => {
                 >
                     <nav className="flex items-center justify-center flex-col">
                         <CustomMobileLink toggle={handleClick} className="mr-4 lg:m-0 lg:my-2" href="/" title="Home" />
-                        <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/about" title="About" />
-                        <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/projects" title="Projects" />
-                        <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/articles" title="Articles" />
+                        <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/about" title="À Propos" />
+                        <CustomMobileLink toggle={handleClick} className="mx-4 lg:m-0 lg:my-2" href="/projects" title="Portfolio" />
+                        <CustomMobileLink toggle={handleClick} className="ml-4 lg:m-0 lg:my-2" href="/articles" title="Travaillons Ensemble" />
                     </nav>
 
                     <nav className="flex items-center justify-center mt-2">
                         <motion.a
                             target={"_blank"}
-                            className="w-6 m-1 mx-3 sm:mx-1"
-                            href="#"
-                            whileHover={{ y: -2 }}
-                            whileTap={{ scale: 0.9 }}
+                            className="w-6 mx-3"
+                            href="https://github.com/SophieLab"
+                            whileHover={{y: -2}}
+                            whileTap={{scale: 0.9}}
                             aria-label="Checkout my github profile"
                         >
-                            <GithubIcon />
+                            <GithubIcon/>
                         </motion.a>
+
                         <motion.a
                             target={"_blank"}
-                            className="w-6 m-1 mx-3 sm:mx-1"
-                            href="#"
-                            whileHover={{ y: -2 }}
-                            whileTap={{ scale: 0.9 }}
+                            className="w-6 mx-3"
+                            href="https://www.linkedin.com/in/sophielabyt/"  // Ajoutez le lien LinkedIn
+                            whileHover={{y: -2}}
+                            whileTap={{scale: 0.9}}
                             aria-label="Checkout my linkedin profile"
                         >
-                            <LinkedInIcon />
+                            <LinkedInIcon/>
                         </motion.a>
 
                         <button
@@ -159,9 +158,9 @@ const Navbar = () => {
                             aria-label="theme-switcher"
                         >
                             {mode === "light" ? (
-                                <SunIcon className="fill-dark" />
+                                <SunIcon className="fill-dark"/>
                             ) : (
-                                <MoonIcon className="fill-dark" />
+                                <MoonIcon className="fill-dark"/>
                             )}
                         </button>
                     </nav>
@@ -169,7 +168,7 @@ const Navbar = () => {
             )}
 
             <div className="absolute left-[50%] top-2 translate-x-[-50%]">
-                <Logo />
+                <Logo/>
             </div>
         </header>
     );
