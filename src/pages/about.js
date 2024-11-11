@@ -39,7 +39,7 @@ export default function About() {
     return (
         <>
             <Head>
-                <title>Minimal Portfolio Built with Nextjs | About Page</title>
+                <title>À Propos</title>
                 <meta
                     name="description"
                     content="Learn more."

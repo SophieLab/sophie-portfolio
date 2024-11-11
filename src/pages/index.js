@@ -11,7 +11,7 @@ export default function Home() {
   return (
       <>
         <Head>
-          <title>Awesome Portfolio Built with Nextjs</title>
+          <title>Sophie Labyt Portfolio</title>
           <meta
               name="description"
               content="Explore SophieLab Next.js developer portfolio and discover the latest webapp projects."
