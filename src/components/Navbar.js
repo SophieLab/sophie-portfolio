@@ -2,12 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import {
-    GithubIcon,
-    LinkedInIcon,
-    MoonIcon,
-    SunIcon,
-} from "./Icons";
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from "./Icons";
 import { motion } from "framer-motion";
 import { useThemeSwitch } from "./Hooks/useThemeSwitch";
 
@@ -19,13 +14,13 @@ const CustomLink = ({ href, title, className = "" }) => {
             {title}
             <span
                 className={`
-          inline-block h-[1px] bg-dark absolute left-0 -bottom-0.5
-          group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-          ${router.asPath === href ? "w-full" : "w-0"} lg:bg-light lg:dark:bg-dark
-        `}
+                    inline-block h-[1px] bg-dark absolute left-0 -bottom-0.5
+                    group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+                    ${router.asPath === href ? "w-full" : "w-0"} lg:bg-light lg:dark:bg-dark
+                `}
             >
-        &nbsp;
-      </span>
+                &nbsp;
+            </span>
         </Link>
     );
 };
@@ -43,13 +38,13 @@ const CustomMobileLink = ({ href, title, className = "", toggle }) => {
             {title}
             <span
                 className={`
-          inline-block h-[1px] bg-dark absolute left-0 -bottom-0.5
-          group-hover:w-full transition-[width] ease duration-300 dark:bg-light
-          ${router.asPath === href ? "w-full" : "w-0"} lg:bg-light lg:dark:bg-dark
-        `}
+                    inline-block h-[1px] bg-dark absolute left-0 -bottom-0.5
+                    group-hover:w-full transition-[width] ease duration-300 dark:bg-light
+                    ${router.asPath === href ? "w-full" : "w-0"} lg:bg-light lg:dark:bg-dark
+                `}
             >
-        &nbsp;
-      </span>
+                &nbsp;
+            </span>
         </button>
     );
 };
@@ -63,7 +58,7 @@ const Navbar = () => {
     };
 
     return (
-        <header className="w-full flex items-center justify-between px-32 py-8 font-medium z-10 dark:text-light lg:px-16 relative z-1 md:px-12 sm:px-8">
+        <header className="fixed top-0 left-0 w-full flex items-center justify-between px-32 py-8 font-medium z-50 dark:text-light bg-white dark:bg-dark lg:px-16 md:px-12 sm:px-8">
             <button
                 type="button"
                 className="flex-col items-center justify-center hidden lg:flex"
@@ -80,8 +75,8 @@ const Navbar = () => {
             <div className="w-full flex justify-between items-center lg:hidden">
                 <nav className="flex items-center justify-center">
                     <CustomLink className="mr-4" href="/" title="Home" />
-                    <CustomLink className="mx-4" href="/about" title="About" />
-                    <CustomLink className="mx-4" href="/projects" title="Projects" />
+                    <CustomLink className="mx-4" href="/about" title="À Propos" />
+                    <CustomLink className="mx-4" href="/projects" title="Portfolio" />
                     <CustomLink className="ml-4" href="/articles" title="Articles" />
                 </nav>
 
@@ -110,7 +105,7 @@ const Navbar = () => {
                     <button
                         onClick={() => setMode(mode === "light" ? "dark" : "light")}
                         className={`w-6 h-6 ease ml-3 flex items-center justify-center rounded-full p-1
-              ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
+                            ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
                         aria-label="theme-switcher"
                     >
                         {mode === "light" ? (
@@ -160,7 +155,7 @@ const Navbar = () => {
                         <button
                             onClick={() => setMode(mode === "light" ? "dark" : "light")}
                             className={`w-6 h-6 ease m-1 ml-3 sm:mx-1 flex items-center justify-center rounded-full p-1
-                ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
+                                ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}`}
                             aria-label="theme-switcher"
                         >
                             {mode === "light" ? (
