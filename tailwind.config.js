@@ -6,31 +6,31 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
-    "./src/**/*.{js,ts,jsx,tsx}", // Si tu utilises ce dossier
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: "class", // Mode sombre basé sur une classe (pratique pour les sites interactifs)
+  darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
-        mont: ["var(--font-mont)", ...fontFamily.sans], // Ajout de la police personnalisée "mont"
+        mont: ["var(--font-mont)", ...fontFamily.sans],
       },
       colors: {
-        dark: "#1b1b1b", // Couleur sombre
-        light: "#f5f5f5", // Couleur claire
-        primary: "#5f32ba", // Couleur principale
-        primaryDark: "#58E6D9", // Couleur principale en mode sombre
-        fuchsia: "#D5006D", // Couleur fuchsia pour l'effet de soleil
-        turquoise: "#58E6D9", // Bleu turquoise
+        dark: "#1b1b1b",
+        light: "#f5f5f5",
+        primary: "#5f32ba",
+        primaryDark: "#58E6D9",
+        fuchsia: "#D5006D",
+        turquoise: "#58E6D9",
       },
       animation: {
-        "gradient-animate": "gradient 15s ease infinite", // Animation pour l'effet de gradient
-        "sun-ray": "sunRay 3s ease-out infinite", // Animation pour l'effet de soleil avec des rayons
+        "gradient-animate": "gradient 15s ease infinite",
+        "sun-ray": "sunRay 3s ease-out infinite",
         first: "moveVertical 30s ease infinite",
         second: "moveInCircle 20s reverse infinite",
         third: "moveInCircle 40s linear infinite",
         fourth: "moveHorizontal 40s ease infinite",
         fifth: "moveInCircle 20s ease infinite",
-        "spin-slow": "spin 8s linear infinite", // Animation de rotation lente
+        "spin-slow": "spin 8s linear infinite",
       },
       keyframes: {
         gradient: {
@@ -84,26 +84,26 @@ module.exports = {
         },
       },
       backgroundImage: {
-        'gradient-animated': 'linear-gradient(45deg, #f056c7, #58e6d9, #5f32ba)', // Définition du gradient animé
+        'gradient-animated': 'linear-gradient(45deg, #f056c7, #58e6d9, #5f32ba)',
         circularLight:
-            "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 100px)", // Dégradé circulaire clair
+            "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 100px)",
         circularDark:
-            "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 100px)", // Dégradé circulaire sombre
+            "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 100px)",
         circularLightLg:
-            "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 80px)", // Grand dégradé circulaire clair
+            "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 80px)",
         circularDarkLg:
-            "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 80px)", // Grand dégradé circulaire sombre
+            "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 80px)",
         circularLightMd:
-            "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 60px)", // Dégradé circulaire moyen clair
+            "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 60px)",
         circularDarkMd:
-            "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 60px)", // Dégradé circulaire moyen sombre
+            "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 60px)",
         circularLightSm:
-            "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 40px)", // Petit dégradé circulaire clair
+            "repeating-radial-gradient(rgba(0,0,0,0.4) 2px,#f5f5f5 5px,#f5f5f5 40px)",
         circularDarkSm:
-            "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 40px)", // Petit dégradé circulaire sombre
+            "repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 40px)",
       },
       boxShadow: {
-        "3xl": "0 15px 15px 1px rgba(80,230,217, 0.4)", // Ombre supplémentaire pour un effet de profondeur
+        "3xl": "0 15px 15px 1px rgba(80,230,217, 0.4)",
       },
     },
     screens: {

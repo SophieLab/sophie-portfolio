@@ -3,12 +3,10 @@ import Head from "next/head";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Skills from "@/components/Skills";
-import certification from "@/components/Certification";
+import Certification from "@/components/Certification";
 import Experience from "@/components/Experience";
 import Education from "@/components/Education";
-import AnimatedText from "@/components/AnimatedText";
 import TransitionEffect from "@/components/TransitionEffect";
-import Certification from "@/components/Certification";
 
 function AnimatedNumberFramerMotion({ value }) {
     const ref = useRef(null);

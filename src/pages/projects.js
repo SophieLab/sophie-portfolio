@@ -9,7 +9,7 @@ import TransitionEffect from "@/components/TransitionEffect";
 // Image imports
 import html from "../../public/images/svgs/html.svg";
 import css from "../../public/images/svgs/css.svg";
-import javascript from "../../public/images/svgs/js.svg"; // Chemin corrigé
+import javascript from "../../public/images/svgs/js.svg";
 import react from "../../public/images/svgs/react.svg";
 import typescript from "../../public/images/svgs/ts.svg";
 import tailwind from "../../public/images/svgs/tailwind.svg";
@@ -25,14 +25,13 @@ import proj2 from "../../public/images/projects/projet2.png";
 import proj3 from "../../public/images/projects/projet3.png";
 import proj4 from "../../public/images/projects/projet4.png";
 import proj5 from "../../public/images/projects/projet5.png";
-import proj6 from "../../public/images/projects/projet6.png"; // Add the image for "Mon Vieux Grimoire"
+import proj6 from "../../public/images/projects/projet6.png";
 import proj7 from "../../public/images/projects/projet7.png";
 import proj8 from "../../public/images/projects/projet8.png";
 
 // Motion for Image
 const FramerImage = motion(Image);
 
-// Featured Project Component
 // FeaturedProject Component
 const FeaturedProject = ({type, title, summary, img, link, technologies}) => (
     <article

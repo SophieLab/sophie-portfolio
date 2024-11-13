@@ -60,7 +60,7 @@ const Photo = () => {
           className="absolute w-[298px] h-[298px] xl:w-[298px] xl:h-[298px] mix-blend-lighten top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         >
           <Image
-            src="/images/profile/sophie-img.webp" // Correction du chemin ici
+            src="/images/profile/sophie-img.webp"
             priority
             quality={100}
             fill
