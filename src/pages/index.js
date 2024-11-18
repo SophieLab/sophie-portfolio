@@ -14,7 +14,7 @@ export default function Home() {
         <title>Sophie Labyt Portfolio</title>
         <meta
           name="description"
-          content="Explore SophieLab Next.js developer portfolio and discover the latest webapp projects."
+          content="Découvrez mon portfolio et mes projets web."
         />
       </Head>
 
