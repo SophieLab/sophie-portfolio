@@ -59,7 +59,7 @@ const Skills = () => {
         <Skill name="Figma" x="4vw" y="18vw" />
         <Skill name="Photoshop" x="32vw" y="9vw" />
         <Skill name="Abode XD" x="10vw" y="22vw" />
-        <Skill name=" Illsutrator" x="28vw" y="18vw" />
+        <Skill name=" Illustrator" x="28vw" y="18vw" />
 
 
 

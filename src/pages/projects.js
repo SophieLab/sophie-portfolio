@@ -182,7 +182,7 @@ const Projects = () => {
                                 type="Développement Web"
                                 title="Kasa, spécialiste de la location entre particuliers en France"
                                 summary="Pour la refonte du site Kasa, j'ai développé une application de location immobilière en React. L'application suit une architecture Single Page Application (SPA), avec le routage géré par React Router. J'ai créé des composants réutilisables pour chaque fonctionnalité, ce qui permet une gestion modulaire et flexible de l'application. L'objectif était de garantir une interface fluide et dynamique, tout en assurant une bonne organisation du code pour faciliter son évolution future."
-                                challenges="Dans ce projet, les principaux problèmes rencontrés ont été la gestion du routage avec React Router, la présentation et manipulation des données issues d'un fichier JSON, ainsi que le respect du design et des animations. L'utilisation de Sass a également posé quelques défis, notamment pour organiser et maintenir les styles de manière efficace."
+                                challenges="Dans ce projet, les principaux enjeux rencontrés ont été la gestion du routage avec React Router, la présentation et manipulation des données issues d'un fichier JSON, ainsi que le respect du design et des animations. L'utilisation de Sass a également posé quelques défis, notamment pour organiser et maintenir les styles de manière efficace."
                                 img={proj5}
                                 link="https://github.com/SophieLab/kasa"
                                 technologies={technologies5}
@@ -204,7 +204,7 @@ const Projects = () => {
                                 type="UI/UX Design"
                                 title="Refonte du site internet pour la Maison Des Bibie's"
                                 summary="J'ai participé à la refonte du site internet et à la création des supports de communication pour la Maison des Bibies, un réseau de micro-crèches à Montauban. L'objectif était de moderniser des supports obsolètes. Durant six mois, en collaboration avec les porteurs de projet, j'ai intégré le pôle communication, contribuant à l'identité visuelle et à la réalisation des prototypes du site. Cette expérience m'a permis de mettre en pratique mes compétences en UI/UX design."
-                                challenges="L'un des principaux défis a été de concilier les attentes des utilisateurs avec les contraintes techniques, tout en garantissant une expérience utilisateur fluide et intuitive. J'ai dû effectuer plusieurs itérations de prototypes basées sur les retours des utilisateurs pour optimiser l'interface."
+                                challenges="L'enjeu de ce projet fût de concilier les attentes des utilisateurs avec les contraintes techniques, tout en garantissant une expérience utilisateur fluide et intuitive. J'ai dû effectuer plusieurs itérations de prototypes basées sur les retours des utilisateurs pour optimiser l'interface."
                                 img={proj7}
                                 link="https://lamaisondesbibies.fr/"
                                 technologies={technologies7}
