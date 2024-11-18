@@ -160,7 +160,7 @@ const Projects = () => {
                                 type="Développement Web"
                                 title="Sophie Bluel - Portfolio d'architecte"
                                 summary="Dans le cadre de ma mission en tant que développeur front-end pour l'agence ArchiWebos, j'ai été chargé de développer plusieurs fonctionnalités pour le site portfolio d'une architecte d’intérieur. Parmi mes principales missions, j'ai créé la page de présentation des travaux à partir du code HTML fourni, ainsi que la page de connexion pour l'administrateur du site, en développant le code front-end de zéro. De plus, j'ai mis en place une modale permettant d'uploader de nouveaux médias, en écrivant le code nécessaire from scratch."
-                                challenges="Les principaux défis rencontrés ont été la compréhension de l'API, notamment pour interpréter sa documentation et les réponses renvoyées. Une fois les données récupérées, leur manipulation pour les trier, filtrer et afficher correctement sur le site a posé des difficultés. De plus, la gestion de l'authentification a été complexe, avec des problèmes liés à la gestion des sessions utilisateur et à la protection des zones restreintes de l'application."
+                                challenges="Les principaux défis rencontrés ont été la compréhension de l'API, notamment pour interpréter sa documentation et les réponses renvoyées. Une fois les données récupérées, leur manipulation pour les trier, filtrer et afficher correctement sur le site a posé des difficultés. De plus, la gestion de l'authentification a été complexe, avec des problèmes liés à la gestion de la session utilisateur."
                                 img={proj3}
                                 link="https://github.com/SophieLab/Portfolio-architecte-sophie-bluel"
                                 technologies={technologies3}
@@ -193,7 +193,7 @@ const Projects = () => {
                                 type="Développement Back-end"
                                 title="Mon Vieux Grimoire"
                                 summary="Dans le cadre de ce projet freelance, j'ai développé le back-end du site Mon Vieux Grimoire pour la chaîne de librairies. J'ai utilisé Node.js et Express pour créer l'API et gérer une base de données MongoDB. L'architecture du projet a été pensée de manière modulaire, avec une séparation claire entre la logique métier, le routage et les middlewares. J'ai sécurisé l'application à l'aide de solutions comme Helmet et Bcrypt. Enfin, pour respecter les bonnes pratiques du Green Code, j'ai optimisé les images téléchargées par les utilisateurs grâce à un middleware utilisant la bibliothèque Sharp."
-                                challenges="J'ai fait face à plusieurs défis, notamment la création d'un système de connexion sécurisé, ce qui m'a permis d'approfondir mes connaissances en authentification et chiffrement. J'ai également rencontré des difficultés avec la gestion de la base de données MongoDB et des problèmes de débogage avec Express. Ces expériences ont renforcé mes compétences techniques et ma résilience en développement web."
+                                challenges="J'ai fait face à plusieurs défis, notamment la création d'un système de connexion sécurisé, ce qui m'a permis d'approfondir mes connaissances en authentification et chiffrement. J'ai également rencontré des difficultés avec la gestion de la base de données MongoDB et des problèmes de débogage avec Express."
                                 img={proj6}
                                 link="https://github.com/SophieLab/mon-vieux-grimoire"
                                 technologies={technologies6}
@@ -215,7 +215,7 @@ const Projects = () => {
                                 type="Développement Web"
                                 title="Création d'un prototype pour l'application MADI"
                                 summary="Dans le cadre d'un projet d'étude, j'ai réalisé un prototypage pour l'application MADI, une intelligence artificielle couplée à l'implant Neuralink. L'objectif était de créer un prototype rassurant pour l'utilisateur. J'ai créé les wireframes et prototypes de l'application, en suivant un scénario utilisateur et une charte graphique donnée. J'ai également rédigé et réalisé les protocoles de tests utilisateurs pour valider l'expérience."
-                                challenges="Le plus grand défi a été de rendre le prototype rassurant pour l'utilisateur, tout en respectant un thème graphique donné. Cela a nécessité une attention particulière à l'esthétique et à l'ergonomie, afin de garantir confiance et confort aux utilisateurs face à une technologie innovante comme l'intelligence artificielle couplée à l'implant Neuralink."
+                                challenges="Le défi de ce projet a été de rendre le prototype rassurant pour l'utilisateur, tout en respectant un thème graphique donné. Cela a nécessité une attention particulière à l'esthétique et à l'ergonomie, afin de garantir confiance et confort aux utilisateurs face à l'intelligence artificielle."
                                 img={proj8}
                                 link="https://"
                                 technologies={technologies8}
