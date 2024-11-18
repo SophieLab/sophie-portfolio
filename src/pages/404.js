@@ -12,8 +12,7 @@ const NotFound = () => {
         <title> 404 Page </title>
         <meta
           name="description"
-          content="ExploreSophie Lab Next.js developer portfolio and
-        discover the latest webapp projects."
+          content="Découvrez mon portfolio et mes projets web."
         />
       </Head>
       <TransitionEffect />
